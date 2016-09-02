@@ -11,16 +11,25 @@ package clases;
  * @author anunez12
  */
 public class Persona { 
-  private long identificacion;private String primer_nombre;private String primer_apellido; 
+  private long identificacion;private String primer_nombre;private String primer_apellido;private String generopersona; 
    
-   public Persona(long identificacion,String primer_nombre,String primer_apellido){ 
+   public Persona(long identificacion,String primer_nombre,String primer_apellido,String generopersona){ 
      this.identificacion=identificacion; 
      this.primer_nombre=primer_nombre; 
-     this.primer_apellido=primer_apellido;
+     this.primer_apellido=primer_apellido; 
+     this.generopersona=generopersona;
    }
    public long getidentificacion(){ 
-     return identificacion;
+     return identificacion; 
    } 
+
+    public void setGeneropersona(String generopersona) {
+        this.generopersona = generopersona;
+    }
+
+    public String getGeneropersona() {
+        return generopersona;
+    }
 
     public String getPrimer_nombre() {
         return primer_nombre;
